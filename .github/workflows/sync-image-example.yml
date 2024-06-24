@@ -35,5 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         #skopeo copy docker://docker.io/grafana/grafana:11.0.0  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/grafana:11.0.0
-        skopeo copy docker://cloudreve/cloudreve:latest docker://registry.cn-hangzhou.aliyuncs.com/app-backend/cloudreve:latest
-        skopeo copy docker://p3terx/aria2-pro:latest docker://registry.cn-hangzhou.aliyuncs.com/app-backend/aria2-pro:latest
+        skopeo copy docker://collabora/code:latest docker://registry.cn-hangzhou.aliyuncs.com/app-backend/cloudreve-code:latest

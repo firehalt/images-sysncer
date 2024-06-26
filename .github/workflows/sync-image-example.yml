@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        #skopeo copy docker://docker.io/grafana/grafana:11.0.0  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/grafana:11.0.0
-        skopeo copy docker://docker.io/python:3.12.0-slim docker://registry.cn-hangzhou.aliyuncs.com/app-backend/python:3.12.0-slim
+        #skopeo copy docker://registry.k8s.io/ingress-nginx/controller:v1.10.1  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/controller:v1.10.1
+        skopeo copy docker://registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.4.1  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/kube-webhook-certgen:v1.4.1

@@ -35,4 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         #skopeo copy docker://registry.k8s.io/ingress-nginx/controller:v1.10.1  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/controller:v1.10.1
-        skopeo copy docker://registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.3.0  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/kube-state-metrics:v2.3.0
+        skopeo copy docker://registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/nfs-subdir-external-provisioner:v4.0.2

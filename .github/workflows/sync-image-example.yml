@@ -35,4 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         #skopeo copy docker://registry.k8s.io/ingress-nginx/controller:v1.10.1  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/controller:v1.10.1
-        skopeo copy docker://busybox:1.28  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/busybox:1.28
+        skopeo copy docker://library/busybox:1.28 docker://registry.cn-hangzhou.aliyuncs.com/app-backend/busybox:1.28

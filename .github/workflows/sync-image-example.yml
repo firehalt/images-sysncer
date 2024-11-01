@@ -37,7 +37,16 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        #skopeo copy docker://registry.k8s.io/ingress-nginx/controller:v1.10.1  docker://registry.cn-hangzhou.aliyuncs.com/app-backend/controller:v1.10.1
-        skopeo copy docker://getsentry/sentry:nightly docker://registry.cn-hangzhou.aliyuncs.com/henry-public/getsentry/sentry:nightly
-
+        skopeo copy docker://getsentry/sentry:nightly docker://registry.cn-hangzhou.aliyuncs.com/henry-public/sentry:nightly
+        skopeo copy docker://getsentry/snuba:nightly docker://registry.cn-hangzhou.aliyuncs.com/henry-public/snuba:nightly
+        skopeo copy docker://getsentry/relay:nightly docker://registry.cn-hangzhou.aliyuncs.com/henry-publicrelay:nightly
+        skopeo copy docker://getsentry/symbolicator:nightly docker://registry.cn-hangzhou.aliyuncs.com/henry-public/symbolicator:nightly
+        skopeo copy docker://getsentry/vroom:nightly docker://registry.cn-hangzhou.aliyuncs.com/henry-public/vroom:nightly
+        skopeo copy docker://memcached:1.6.26-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/memcached:1.6.26-alpine
+        skopeo copy docker://redis:6.2.14-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/redis:6.2.14-alpine
+        skopeo copy docker://postgres:14.11 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/postgres:14.11
+        skopeo copy docker://confluentinc/cp-kafka:7.6.1 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/cp-kafka:7.6.1
+        skopeo copy docker://altinity/clickhouse-server:23.8.11.29.altinitystable docker://registry.cn-hangzhou.aliyuncs.com/henry-public/clickhouse-server:23.8.11.29.altinitystable
+        skopeo copy docker://altinity/clickhouse-server:22.8.15.25.altinitystable docker://registry.cn-hangzhou.aliyuncs.com/henry-public/clickhouse-server:22.8.15.25.altinitystable
+        skopeo copy docker://nginx:1.25.4-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/nginx:1.25.4-alpine
 

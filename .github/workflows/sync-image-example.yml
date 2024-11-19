@@ -37,4 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://provectuslabs/kafka-ui:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/kafka-ui:latest
+        skopeo copy docker://starrocks/operator:v1.9.8 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/operator:v1.9.8
+        skopeo copy docker://starrocks/fe-ubuntu:3.1.15 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/fe-ubuntu:3.1.15
+        skopeo copy docker://starrocks/be-ubuntu:3.1.15 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/be-ubuntu:3.1.15

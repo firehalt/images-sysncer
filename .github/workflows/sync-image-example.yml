@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker:///henriy/java:cst-8-jdk-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/java:cst-8-jdk-alpine
+        skopeo copy docker://henriy/java:cst-8-jdk-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/java:cst-8-jdk-alpine
 

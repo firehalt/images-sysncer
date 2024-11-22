@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://apache/dolphinscheduler-alert-server:3.2.2  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/dolphinscheduler-alert-server:3.2.2 
+        skopeo copy docker://apache/dolphinscheduler-tools:3.2.2  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/dolphinscheduler-tools:3.2.2 
 

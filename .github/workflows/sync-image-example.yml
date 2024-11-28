@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://selectdb/doris.k8s-operator:1.6.1 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/doris.k8s-operator:1.6.1
+        skopeo copy docker://selectdb/alpine:latest   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/alpine:latest 
 
 

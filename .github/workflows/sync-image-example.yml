@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://sonarqube:zh   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/sonarqube:zh
+        skopeo copy docker://sonarqube:latest   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/sonarqube:latest
   

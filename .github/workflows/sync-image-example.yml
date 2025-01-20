@@ -37,19 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://langgenius/dify-api:0.15.1 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/dify-api:0.15.1
-        skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/postgres:15-alpine
-        skopeo copy docker://redis:6-alpine docker://registry.cn-hangzhou.aliyuncs.com/henry-public/redis:6-alpine
-        skopeo copy docker://langgenius/dify-sandbox:0.2.10 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/dify-sandbox:0.2.10
-        skopeo copy docker://ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/squid:latest 
-        skopeo copy docker://certbot/certbot docker://registry.cn-hangzhou.aliyuncs.com/henry-public/certbot:latest
-        skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/nginx:latest
-        skopeo copy docker://pingcap/tidb:v8.4.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/tidb:v8.4.0 
-        skopeo copy docker://semitechnologies/weaviate:1.19.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/weaviate:1.19.0
-        skopeo copy docker://pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/pgvector:pg16 
-        skopeo copy docker://tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/pgvecto-rs:pg16-v0.3.0 
-        skopeo copy docker://minio/minio:RELEASE.2023-03-20T20-16-18Z docker://registry.cn-hangzhou.aliyuncs.com/henry-public/minio:RELEASE.2023-03-20T20-16-18
-        skopeo copy docker://milvusdb/milvus:v2.5.0-beta docker://registry.cn-hangzhou.aliyuncs.com/henry-public/milvus:v2.5.0-beta 
-        skopeo copy docker://opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/opensearch:latest 
-        skopeo copy docker://opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/opensearch-dashboards:latest 
-        skopeo copy docker://myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/myscaledb:1.6.4
+        skopeo copy docker://semitechnologies/weaviate:1.19.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/weaviate:1.19.0 

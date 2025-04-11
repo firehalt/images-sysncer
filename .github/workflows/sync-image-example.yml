@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://registry.k8s.io/ingress-nginx/controller:v1.12.1 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/controller:v1.12.1
+        skopeo copy docker://nginx:1.25.4-alpine  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/nginx:1.25.4-alpine

@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://caarlos0/domain_exporter:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/domain_exporter:latest
+        skopeo copy docker://apacherocketmq/rocketmq-dashboard:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/rocketmq-dashboard:v2.0.1

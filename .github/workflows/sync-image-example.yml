@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://metabase/metabase:v0.54.9.4 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/metabase:v0.54.9.3
+        skopeo copy docker://hhyo/archery-base:sha-d8159f4  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/archery-base:sha-d8159f4

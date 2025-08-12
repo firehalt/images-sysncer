@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://oliver006/redis_exporter:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/redis_exporter:latest
+        skopeo copy docker://node:22.15.1-slim  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/node:22.15.1-slim 

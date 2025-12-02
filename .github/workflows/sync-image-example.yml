@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://python:3.10.19 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/python:3.10.19
+        skopeo copy docker://elasticsearch:8.15.5 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/elasticsearch:8.15.5
     
 

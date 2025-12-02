@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://elasticsearch:8.15.5 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/elasticsearch:8.15.5
+        skopeo copy docker://kibana:8.15.5  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/kibana:8.15.5
     
 

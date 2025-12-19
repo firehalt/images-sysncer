@@ -37,6 +37,17 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://redis:5.0.14   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/redis:5.0.14
+        skopeo copy docker://supabase/studio:2025.12.09-sha-434634f  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-studio:2025.12.09-sha-434634f
+        skopeo copy docker://kong:2.8.1  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/kong:2.8.1
+        skopeo copy docker://supabase/gotrue:v2.183.0  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-gotrue:v2.183.0
+        skopeo copy docker://postgrest/postgrest:v14.1  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/postgrest-postgrest:v14.1
+        skopeo copy docker://supabase/realtime:v2.68.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-realtime:v2.68.0
+        skopeo copy docker://supabase/storage-api:v1.33.0  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-storage-api:v1.33.0
+        skopeo copy docker://darthsim/imgproxy:v3.8.0  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/darthsim-imgproxy:v3.8.0
+        skopeo copy docker://supabase/postgres-meta:v0.93.1   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-postgres-meta:v0.93.1
+        skopeo copy docker://supabase/logflare:1.26.25  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-logflare:1.26.25
+        skopeo copy docker://supabase/postgres:15.8.1.085   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-postgres:15.8.1.085
+        skopeo copy docker://timberio/vector:0.28.1-alpine  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/timberio-vector:0.28.1-alpine 
+        skopeo copy docker://supabase/supavisor:2.7.4  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-supavisor:2.7.4
     
 

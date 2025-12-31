@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://supabase/edge-runtime:v1.69.28 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/supabase-edge-runtime:v1.69.28
+        skopeo copy docker://curlimages/curl:8.5.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/curl:8.5.0
 

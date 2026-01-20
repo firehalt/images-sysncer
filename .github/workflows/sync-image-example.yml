@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://curlimages/curl:8.5.0 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/curl:8.5.0
+        skopeo copy docker://redpandadata/console:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/console:latest
 

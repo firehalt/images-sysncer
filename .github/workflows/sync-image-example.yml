@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://openjdk:17.0.2-jdk-slim docker://registry.cn-hangzhou.aliyuncs.com/henry-public/openjdk:17.0.2-jdk-slim
+        skopeo copy docker://apache/rocketmq-exporter:latest docker://registry.cn-hangzhou.aliyuncs.com/henry-public/rocketmq-exporter:latest
 

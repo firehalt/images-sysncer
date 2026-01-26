@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://envoyproxy/gateway:v1.6.2 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/envoyproxy-gateway:v1.6.2
-        skopeo copy docker://envoyproxy/ratelimit:99d85510 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/envoyproxy-ratelimit:99d85510
+        skopeo copy docker://envoyproxy/envoy/manifests/distroless-v1.36.3 docker://registry.cn-hangzhou.aliyuncs.com/henry-public/distroless-v1.36.3
+
 

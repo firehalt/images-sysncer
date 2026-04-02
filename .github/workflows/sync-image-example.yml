@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://openjdk:17-jdk-slim docker://registry.cn-hangzhou.aliyuncs.com/henry-public/openjdk:17-jdk-slim 
+        skopeo copy docker://node:24.13.0-slim docker://registry.cn-hangzhou.aliyuncs.com/henry-public/node:24.13.0-slim 
 
 

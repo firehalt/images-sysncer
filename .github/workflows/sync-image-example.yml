@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://zhaohuabing/testwasm:v0.0.1  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/testwasm:v0.0.1 
+        skopeo copy docker://ghcr.io/corazawaf/coraza-proxy-wasm:0.6.0  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/coraza-proxy-wasm:0.6.0
 
 

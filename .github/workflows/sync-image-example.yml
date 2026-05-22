@@ -37,6 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://node:24.13.0-slim docker://registry.cn-hangzhou.aliyuncs.com/henry-public/node:24.13.0-slim 
+        skopeo copy docker://zhaohuabing/testwasm:v0.0.1  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/testwasm:v0.0.1 
 
 

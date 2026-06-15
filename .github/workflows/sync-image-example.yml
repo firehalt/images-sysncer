@@ -37,6 +37,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://ghcr.io/corazawaf/coraza-proxy-wasm:0.6.0  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/coraza-proxy-wasm:0.6.0
+        skopeo copy docker://mongo:8.0.20  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/mongo:8.0.20 
+        skopeo copy docker://getmeili/meilisearch:v1.35.1  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/meilisearch:v1.35.1
+        skopeo copy docker://pgvector/pgvector:0.8.0-pg15-trixie docker://registry.cn-hangzhou.aliyuncs.com/henry-public/pgvector:0.8.0-pg15-trixie 
 
 

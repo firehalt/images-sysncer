@@ -37,8 +37,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://registry.librechat.ai/danny-avila/librechat-rag-api-dev-lite:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/librechat-rag-api-dev-lite:latest
-        skopeo copy docker://registry.librechat.ai/danny-avila/librechat-dev:latest   docker://registry.cn-hangzhou.aliyuncs.com/henry-public/librechat-dev:latest 
+        skopeo copy docker://ghcr.io/ibm/mcp-context-forge:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/mcp-context-forge:latest
+        
 
 
 

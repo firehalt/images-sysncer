@@ -37,7 +37,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://ghcr.io/ibm/mcp-context-forge:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/mcp-context-forge:latest
+        skopeo copy docker://apachesuperset.docker.scarf.sh/apache/superset:6.1.0  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/superset:6.1.0 
         
 
 

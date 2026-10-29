@@ -37,7 +37,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://rockchin/langbot:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/rockchin-langbot:latest 
+        skopeo copy docker://quay.io/prometheus/blackbox-exporter:latest  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/blackbox-exporter:latest 
 
 
 

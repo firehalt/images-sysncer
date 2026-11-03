@@ -37,7 +37,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://victoriametrics/operator:v0.75.2  docker://registry.cn-hangzhou.aliyuncs.com/henry-public/operator:v0.75.2 
-
+        skopeo copy docker://victoriametrics/vmselect:v1.155.0-cluster   docker://registry.cn-shenzhen.aliyuncs.com/henry-public/victoriametrics/vmselect:v1.155.0-cluster
+        skopeo copy docker://victoriametrics/vminsert:v1.155.0-cluster  docker://registry.cn-shenzhen.aliyuncs.com/henry-public/victoriametrics/vminsert:v1.155.0-cluster
 
 
